@@ -52,13 +52,13 @@ function App() {
   const [city, updateCity] = useState();
   const [weather, updateWeather] = useState();
   const fetchWeather = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     const response = await Axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=fe4feefa8543e06d4f3c66d92c61b69c`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=80050f0897d5cc9bc2c999027f23bc4b`,
     );
     updateWeather(response.data);
   };
-  return (
+  return ( 
     <Container>
       <AppLabel>React Weather App</AppLabel>
       {city && weather ? (
